@@ -14,6 +14,21 @@ void Initialize(HWND hwnd)
 	kRealResolutionY = r.bottom - r.top;
 }
 
+void Draw(HDC hdc)
+{
+	HPEN pen = CreatePen(PS_SOLID, 10, RGB(255, 0, 0));
+	HBRUSH oldPen = (HBRUSH)SelectObject(hdc, pen);
+	HBRUSH brush = CreateSolidBrush(RGB(0, 0, 255));
+	HBRUSH oldBrush = (HBRUSH)SelectObject(hdc, brush);
+
+	Rectangle(hdc, 0, 0, 100, 100);
+
+	SelectObject(hdc, oldPen);
+	SelectObject(hdc, oldBrush);
+	DeleteObject(pen);
+	DeleteObject(brush);
+}
+
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
 {
 	PAINTSTRUCT	ps;
@@ -26,6 +41,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
 		break;
 	case WM_PAINT:
 		hDC = BeginPaint(hwnd, &ps);
+		Draw(hDC);
 		EndPaint(hwnd, &ps);
 		break;
 	case WM_DESTROY:
