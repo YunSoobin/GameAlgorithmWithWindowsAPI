@@ -32,7 +32,8 @@ void Draw(HDC hdc)
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
 {
 	PAINTSTRUCT	ps;
-	HDC hDC;
+	HDC hDC, mDC;	// hDC(프론트버퍼에 해당), mDC(백버퍼에 해당)
+	HBITMAP hBitmap;
 
 	switch (msg)
 	{
@@ -41,7 +42,13 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
 		break;
 	case WM_PAINT:
 		hDC = BeginPaint(hwnd, &ps);
-		Draw(hDC);
+		mDC = CreateCompatibleDC(hDC);
+		hBitmap = CreateCompatibleBitmap(hDC, kRealResolutionX, kRealResolutionY);
+		SelectObject(mDC, hBitmap);
+		Draw(mDC);
+		BitBlt(hDC, 0, 0, kRealResolutionX, kRealResolutionY, mDC, 0, 0, SRCCOPY);
+		DeleteDC(mDC);
+		DeleteObject(hBitmap);
 		EndPaint(hwnd, &ps);
 		break;
 	case WM_DESTROY:
