@@ -17,7 +17,6 @@ void Initialize(HWND hwnd)
 	kRealResolutionY = r.bottom - r.top;
 
 	kTImer.Reset();
-	kTImer.Start();
 }
 
 void Update(HWND hwnd)
@@ -25,33 +24,39 @@ void Update(HWND hwnd)
 	kTImer.Tick();
 	const float deltaTime = kTImer.DeltaTime();
 
-	// TO DO
-	DEBUG_PRINT("%f\n", deltaTime);
+	// TODO
+
 }
 
 void Draw(HDC hdc)
 {
-	//SetPixel(hdc, 100, 100, RGB(255, 0, 0));
+	// TODO
+	HPEN newPen = CreatePen(PS_SOLID, 1, RGB(0, 255, 255));
+	HPEN oldPen = (HPEN)SelectObject(hdc, newPen);
+	HBRUSH newBrush = CreateSolidBrush(RGB(0, 255, 255));
+	HBRUSH oldBrush = (HBRUSH)SelectObject(hdc, newBrush);
 
-	HPEN pen = CreatePen(PS_SOLID, 1, RGB(255, 0, 0));
-	HBRUSH oldPen = (HBRUSH)SelectObject(hdc, pen);
-	HBRUSH brush = CreateSolidBrush(RGB(0, 0, 255));
-	HBRUSH oldBrush = (HBRUSH)SelectObject(hdc, brush);
+	Rectangle(hdc, 0, 0, kRealResolutionX, kRealResolutionY);
 
-	//Rectangle(hdc, 0, 0, 100, 100);
-	//Ellipse(hdc, 100, 100, 400, 200);
-	/*MoveToEx(hdc, 0, 0, 0);
-	LineTo(hdc, 200, 200);*/
-	{
-		std::vector<POINT> pts = { { 50, 0 }, { 0, 25 }, { 50, 25 } };
-		Polygon(hdc, pts.data(), pts.size());
-	}
+	HFONT newFont = CreateFont(50, 20, 0, 0, 0, TRUE, FALSE, FALSE, HANGUL_CHARSET, 0, 0, 0, 0, _TEXT("Arial"));
+	HFONT oldFont = (HFONT)SelectObject(hdc, newFont);
+
+	SetBkMode(hdc, TRANSPARENT);
+	SetTextColor(hdc, RGB(0, 0, 255));
+	SetBkColor(hdc, RGB(255, 255, 255));
+	//SetBkMode(hdc, OPAQUE);
+
+	RECT r = { 0, 0, 1000, 400 };
+	const char* str = "Practical Game Programming";
+	//TextOutA(hdc, 0, 0, str, strlen(str));
+	DrawTextA(hdc, str, strlen(str), &r, DT_LEFT | DT_TOP);
 
 	SelectObject(hdc, oldPen);
 	SelectObject(hdc, oldBrush);
-	DeleteObject(pen);
-	DeleteObject(brush);
-	
+	SelectObject(hdc, oldFont);
+	DeleteObject(newPen);
+	DeleteObject(newBrush);
+	DeleteObject(newFont);
 }
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
