@@ -3,15 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\owner\\Documents\\GitHub\\GameAlgorithmWithWindowsAPI\\SWP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\owner\\Documents\\GitHub\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\owner\\Documents\\GitHub\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\PROGRAM FILES (X86)\\WINDOWS KITS\\10\\INCLUDE\\10.0.22621.0\\UM\\WINUSER.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\owner\\Documents\\GitHub\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\TImer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\TImer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\owner\\Documents\\GitHub\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\owner\\Documents\\GitHub\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\TImer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\TImer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\PROGRAM FILES (X86)\\WINDOWS KITS\\10\\INCLUDE\\10.0.22621.0\\UM\\WINUSER.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,24 +29,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 211,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "stdafx.h",
               "DocumentMoniker": "C:\\Users\\owner\\Documents\\GitHub\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\stdafx.h",
               "RelativeDocumentMoniker": "Game\\stdafx.h",
               "ToolTip": "C:\\Users\\owner\\Documents\\GitHub\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\stdafx.h",
               "RelativeToolTip": "Game\\stdafx.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-09-08T07:02:51.562Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "WinUser.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\WinUser.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\WinUser.h",
@@ -48,22 +56,48 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-09-09T01:44:08.629Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TImer.cpp",
+              "DocumentMoniker": "C:\\Users\\owner\\Documents\\GitHub\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\TImer.cpp",
+              "RelativeDocumentMoniker": "Game\\TImer.cpp",
+              "ToolTip": "C:\\Users\\owner\\Documents\\GitHub\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\TImer.cpp",
+              "RelativeToolTip": "Game\\TImer.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-11T00:39:41.283Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
           "DockedWidth": 257,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "TImer.h",
+              "DocumentMoniker": "C:\\Users\\owner\\Documents\\GitHub\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\TImer.h",
+              "RelativeDocumentMoniker": "Game\\TImer.h",
+              "ToolTip": "C:\\Users\\owner\\Documents\\GitHub\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\TImer.h",
+              "RelativeToolTip": "Game\\TImer.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-11T00:36:41.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Main.cpp",
               "DocumentMoniker": "C:\\Users\\owner\\Documents\\GitHub\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\Main.cpp",
               "RelativeDocumentMoniker": "Game\\Main.cpp",
               "ToolTip": "C:\\Users\\owner\\Documents\\GitHub\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\Main.cpp",
               "RelativeToolTip": "Game\\Main.cpp",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAAC4AAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-08T07:01:07.576Z",
               "EditorCaption": ""

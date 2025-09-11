@@ -1,9 +1,12 @@
 #include "stdafx.h"
 
+#include "Timer.h"
+
 #pragma comment(linker, "/entry:WinMainCRTStartup /subsystem:console")
 
 int kRealResolutionX = 0;
 int kRealResolutionY = 0;
+TImer kTImer = {};
 
 void Initialize(HWND hwnd)
 {
@@ -12,6 +15,18 @@ void Initialize(HWND hwnd)
 
 	kRealResolutionX = r.right - r.left;
 	kRealResolutionY = r.bottom - r.top;
+
+	kTImer.Reset();
+	kTImer.Start();
+}
+
+void Update(HWND hwnd)
+{
+	kTImer.Tick();
+	const float deltaTime = kTImer.DeltaTime();
+
+	// TO DO
+	DEBUG_PRINT("%f\n", deltaTime);
 }
 
 void Draw(HDC hdc)
@@ -38,7 +53,12 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
 	switch (msg)
 	{
 	case WM_CREATE:
+		SetTimer(hwnd, 0, 1, 0);	// ID가 0인 타이머
 		Initialize(hwnd);
+		break;
+	case WM_TIMER:
+		Update(hwnd);
+		InvalidateRect(hwnd, 0, 0);	// WM_PAINT메세지를 호출
 		break;
 	case WM_PAINT:
 		hDC = BeginPaint(hwnd, &ps);
@@ -52,6 +72,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
 		EndPaint(hwnd, &ps);
 		break;
 	case WM_DESTROY:
+		KillTimer(hwnd, 0);	// ID가 0인 타이머
 		PostQuitMessage(0);
 		break;
 	}
