@@ -31,17 +31,27 @@ void Update(HWND hwnd)
 
 void Draw(HDC hdc)
 {
-	HPEN pen = CreatePen(PS_SOLID, 10, RGB(255, 0, 0));
+	//SetPixel(hdc, 100, 100, RGB(255, 0, 0));
+
+	HPEN pen = CreatePen(PS_SOLID, 1, RGB(255, 0, 0));
 	HBRUSH oldPen = (HBRUSH)SelectObject(hdc, pen);
 	HBRUSH brush = CreateSolidBrush(RGB(0, 0, 255));
 	HBRUSH oldBrush = (HBRUSH)SelectObject(hdc, brush);
 
-	Rectangle(hdc, 0, 0, 100, 100);
+	//Rectangle(hdc, 0, 0, 100, 100);
+	//Ellipse(hdc, 100, 100, 400, 200);
+	/*MoveToEx(hdc, 0, 0, 0);
+	LineTo(hdc, 200, 200);*/
+	{
+		std::vector<POINT> pts = { { 50, 0 }, { 0, 25 }, { 50, 25 } };
+		Polygon(hdc, pts.data(), pts.size());
+	}
 
 	SelectObject(hdc, oldPen);
 	SelectObject(hdc, oldBrush);
 	DeleteObject(pen);
 	DeleteObject(brush);
+	
 }
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
