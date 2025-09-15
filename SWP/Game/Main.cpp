@@ -2,11 +2,15 @@
 
 #include "Timer.h"
 
-#pragma comment(linker, "/entry:WinMainCRTStartup /subsystem:console")
+#include "Text.h"
+
+#pragma comment(linker,"/entry:WinMainCRTStartup /subsystem:console")
 
 int kRealResolutionX = 0;
 int kRealResolutionY = 0;
-TImer kTImer = {};
+TImer kTimer = {};
+
+std::unique_ptr<UI> kText = std::make_unique<Text>();
 
 void Initialize(HWND hwnd)
 {
@@ -16,13 +20,16 @@ void Initialize(HWND hwnd)
 	kRealResolutionX = r.right - r.left;
 	kRealResolutionY = r.bottom - r.top;
 
-	kTImer.Reset();
+	kText->Start("Hello\nWorld\nPractical\nGame\nProgramming@@@", { 0, 0, 200, 100 });
+	DYNCAST(Text, kText)->SetColor(COLOR_BLACK, COLOR_YELLOW, false);
+
+	kTimer.Reset();
 }
 
 void Update(HWND hwnd)
 {
-	kTImer.Tick();
-	const float deltaTime = kTImer.DeltaTime();
+	kTimer.Tick();
+	const float deltaTime = kTimer.DeltaTime();
 
 	// TODO
 
@@ -31,32 +38,18 @@ void Update(HWND hwnd)
 void Draw(HDC hdc)
 {
 	// TODO
-	HPEN newPen = CreatePen(PS_SOLID, 1, RGB(0, 255, 255));
-	HPEN oldPen = (HPEN)SelectObject(hdc, newPen);
-	HBRUSH newBrush = CreateSolidBrush(RGB(0, 255, 255));
-	HBRUSH oldBrush = (HBRUSH)SelectObject(hdc, newBrush);
+	HBRUSH whiteBrush = CreateSolidBrush(COLOR_WHITE);
+	HBRUSH oldBrush = (HBRUSH)SelectObject(hdc, whiteBrush);
+	HPEN whitePen = CreatePen(PS_SOLID, 1, COLOR_WHITE);
+	HPEN oldPen = (HPEN)SelectObject(hdc, whitePen);
 
 	Rectangle(hdc, 0, 0, kRealResolutionX, kRealResolutionY);
+	kText->Draw(hdc);
 
-	HFONT newFont = CreateFont(50, 20, 0, 0, 0, TRUE, FALSE, FALSE, HANGUL_CHARSET, 0, 0, 0, 0, _TEXT("Arial"));
-	HFONT oldFont = (HFONT)SelectObject(hdc, newFont);
-
-	SetBkMode(hdc, TRANSPARENT);
-	SetTextColor(hdc, RGB(0, 0, 255));
-	SetBkColor(hdc, RGB(255, 255, 255));
-	//SetBkMode(hdc, OPAQUE);
-
-	RECT r = { 0, 0, 1000, 400 };
-	const char* str = "Practical Game Programming";
-	//TextOutA(hdc, 0, 0, str, strlen(str));
-	DrawTextA(hdc, str, strlen(str), &r, DT_LEFT | DT_TOP);
-
-	SelectObject(hdc, oldPen);
 	SelectObject(hdc, oldBrush);
-	SelectObject(hdc, oldFont);
-	DeleteObject(newPen);
-	DeleteObject(newBrush);
-	DeleteObject(newFont);
+	SelectObject(hdc, oldPen);
+	DeleteObject(whiteBrush);
+	DeleteObject(whitePen);
 }
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
