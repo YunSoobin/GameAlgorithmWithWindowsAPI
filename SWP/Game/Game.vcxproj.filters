@@ -26,6 +26,9 @@
     <ClCompile Include="UI.cpp">
       <Filter>UI</Filter>
     </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -39,6 +42,9 @@
     </ClInclude>
     <ClInclude Include="Text.h">
       <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Tools</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

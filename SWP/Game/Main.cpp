@@ -1,6 +1,7 @@
 #include "stdafx.h"
 
 #include "Timer.h"
+#include "Input.h"
 
 #include "Text.h"
 
@@ -9,6 +10,7 @@
 int kRealResolutionX = 0;
 int kRealResolutionY = 0;
 TImer kTimer = {};
+Input kInput = {};
 
 std::unique_ptr<UI> kText = std::make_unique<Text>();
 
@@ -32,7 +34,12 @@ void Update(HWND hwnd)
 	const float deltaTime = kTimer.DeltaTime();
 
 	// TODO
+	kInput.Update();
 
+	if (kInput.GetKeyDown(KEYCODE_A))
+	{
+		DEBUG_PRINT("A키를 눌렀습니다 !\n");
+	}
 }
 
 void Draw(HDC hdc)
