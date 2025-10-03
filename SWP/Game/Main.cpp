@@ -40,6 +40,32 @@ void Update(HWND hwnd)
 	{
 		DEBUG_PRINT("A키를 눌렀습니다 !\n");
 	}
+
+	if (kInput.GetMouseDown(MOUSECODE_L))
+	{
+		DEBUG_PRINT("왼쪽 마우스 눌림 !!\n");
+	}
+	else if (kInput.GetMouseUp(MOUSECODE_L))
+	{
+		DEBUG_PRINT("왼쪽 마우스 올림 !!\n");
+	}
+	else if (kInput.GetMousePressed(MOUSECODE_L))
+	{
+		DEBUG_PRINT("왼쪽 마우스 누르는중 !!\n");
+	}
+
+	if (kInput.GetMouseDown(MOUSECODE_R))
+	{
+		DEBUG_PRINT("오른쪽 마우스 눌림 !!\n");
+	}
+	else if (kInput.GetMouseUp(MOUSECODE_R))
+	{
+		DEBUG_PRINT("오른쪽 마우스 올림 !!\n");
+	}
+	else if (kInput.GetMousePressed(MOUSECODE_R))
+	{
+		DEBUG_PRINT("오른쪽 마우스 누르는중 !!\n");
+	}
 }
 
 void Draw(HDC hdc)
@@ -70,6 +96,24 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
 	case WM_CREATE:
 		SetTimer(hwnd, 0, 1, 0);	// ID가 0인 타이머
 		Initialize(hwnd);
+		break;
+	case WM_LBUTTONDOWN:
+		kInput.SetMouseDown(MOUSECODE_L);
+		break;
+	case WM_LBUTTONUP:
+		kInput.SetMouseUp(MOUSECODE_L);
+		break;
+	case WM_RBUTTONDOWN:
+		kInput.SetMouseDown(MOUSECODE_R);
+		break;
+	case WM_RBUTTONUP:
+		kInput.SetMouseUp(MOUSECODE_R);
+		break;
+	case WM_MBUTTONDOWN:
+		kInput.SetMouseDown(MOUSECODE_M);
+		break;
+	case WM_MBUTTONUP:
+		kInput.SetMouseUp(MOUSECODE_M);
 		break;
 	case WM_TIMER:
 		Update(hwnd);

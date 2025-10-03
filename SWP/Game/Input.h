@@ -28,6 +28,13 @@ enum KEYCODE : int
 	KEYCODE_ESC = VK_ESCAPE,
 };
 
+enum MOUSECODE : int
+{
+	MOUSECODE_L,
+	MOUSECODE_M,
+	MOUSECODE_R,
+};
+
 enum class KEYSTATE : int
 {
 	KEY_NONE,
@@ -46,8 +53,21 @@ public:
 	bool GetKeyUp(int keycode) { return _currKeyState[keycode] == KEYSTATE::KEY_UP ? true : false; };
 	bool GetKeyPressed(int keycode) { return _currKeyState[keycode] == KEYSTATE::KEY_PRESSED ? true : false; };
 
+	void SetMouseDown(int keycode) { _currMouseState[keycode] = KEYSTATE::KEY_DOWN; }
+	void SetMouseUp(int keycode) { _currMouseState[keycode] = KEYSTATE::KEY_UP; }
+
+	bool GetMouseDown(int keycode) { return _prevMouseState[keycode] == KEYSTATE::KEY_DOWN ? true : false; }
+	bool GetMouseUp(int keycode) { return _prevMouseState[keycode] == KEYSTATE::KEY_UP ? true : false; }
+	bool GetMousePressed(int keycode) { return _prevMouseState[keycode] == KEYSTATE::KEY_PRESSED ? true : false; }
+
+	POINT GetMousePosition() const { return _pos; }
+
 private:
 	unsigned char _preKeyChar[256] = {};
 	KEYSTATE _currKeyState[256] = {};
+
+	POINT _pos = {};
+	KEYSTATE _prevMouseState[3] = {};
+	KEYSTATE _currMouseState[3] = {};
 };
 
