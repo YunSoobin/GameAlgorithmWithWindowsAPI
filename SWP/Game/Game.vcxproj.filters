@@ -11,6 +11,9 @@
     <Filter Include="UI">
       <UniqueIdentifier>{480d3d6f-1137-4edc-84c9-67be9f9308b4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{1b25050a-b58b-4355-9751-1249f78bd26b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -32,6 +35,12 @@
     <ClCompile Include="Sound.cpp">
       <Filter>Tools</Filter>
     </ClCompile>
+    <ClCompile Include="FastText.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -51,6 +60,12 @@
     </ClInclude>
     <ClInclude Include="Sound.h">
       <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="FastText.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Scene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -11,8 +11,8 @@ public:
 	virtual void Update(float dt) {};
 	virtual void Draw(HDC hcd) {};
 
-	void SetName(const std::string& name);
-	void SetRect(const RECT& r) { _r = r; }
+	virtual void SetName(const std::string& name);
+	virtual void SetRect(const RECT& r) { _r = r; }
 
 protected:
 	std::vector<std::string> _name;

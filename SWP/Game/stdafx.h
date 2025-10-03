@@ -43,3 +43,10 @@ enum LINEAR_COLOR : int
 	COLOR_MAGENTA= RGB(255, 0, 255),
 	COLOR_CYAN = RGB(0, 255, 255),
 };
+
+struct Vector2f
+{
+	float x, y;
+
+	Vector2f& operator+=(const Vector2f& other);
+};

@@ -3,8 +3,10 @@
 #include "Timer.h"
 #include "Input.h"
 #include "Sound.h"
+#include "Camera.h"
 
 #include "Text.h"
+#include "FastText.h"
 
 #pragma comment(linker,"/entry:WinMainCRTStartup /subsystem:console")
 
@@ -13,8 +15,10 @@ int kRealResolutionY = 0;
 TImer kTimer = {};
 Input kInput = {};
 Sound kSound = {};
+Camera kCamera = {};
 
 std::unique_ptr<UI> kText = std::make_unique<Text>();
+std::unique_ptr<UI> kFastText = std::make_unique<FastText>();
 
 void Initialize(HWND hwnd)
 {
@@ -26,8 +30,12 @@ void Initialize(HWND hwnd)
 
 	kText->Start("Hello\nWorld\nPractical\nGame\nProgramming@@@", { 0, 0, 200, 100 });
 	DYNCAST(Text, kText)->SetColor(COLOR_BLACK, COLOR_YELLOW, false);
+	kFastText->Start("", { 0, 100, 200, 120 });
+	DYNCAST(FastText, kFastText)->SetColor(COLOR_WHITE, COLOR_BLUE, false);
+	DYNCAST(FastText, kFastText)->SetSize({ 5, 20 });
 
 	kSound.RegisterSound("t1Sound", "test.mp3");
+	kCamera.Reset(kRealResolutionX, kRealResolutionY);
 
 	kTimer.Reset();
 }
@@ -35,32 +43,31 @@ void Initialize(HWND hwnd)
 void Update(HWND hwnd)
 {
 	kTimer.Tick();
-	const float deltaTime = kTimer.DeltaTime();
+	const float dt = kTimer.DeltaTime();
 
 	// TODO
 	kInput.Update();
 
-	if (kInput.GetKeyDown(KEYCODE_A))
+	constexpr float camSpeed = 100.0F;
+	if (kInput.GetKeyPressed(KEYCODE_W))
 	{
-		DEBUG_PRINT("À½¾Ç Àç»ý\n");
-		kSound.Play(CHANNEL::CH1, "t1Sound", false);
-		kSound.SetVolume(CHANNEL::CH1, 0.1F);
+		kCamera.camPos += {0.0F, -camSpeed * dt};
 	}
-	else if (kInput.GetKeyDown(KEYCODE_S))
+	if (kInput.GetKeyPressed(KEYCODE_S))
 	{
-		DEBUG_PRINT("À½¾Ç Àç»ý ¸ØÃã\n");
-		kSound.Stop(CHANNEL::CH1);
+		kCamera.camPos += {0.0F, camSpeed* dt};
 	}
-	else if (kInput.GetKeyDown(KEYCODE_D))
+	if (kInput.GetKeyPressed(KEYCODE_A))
 	{
-		DEBUG_PRINT("À½¾Ç ´Ù½Ã Àç»ý\n");
-		kSound.Resume(CHANNEL::CH1);
+		kCamera.camPos += {-camSpeed * dt, 0.0F };
 	}
-	else if (kInput.GetKeyDown(KEYCODE_W))
+	if (kInput.GetKeyPressed(KEYCODE_D))
 	{
-		DEBUG_PRINT("À½¾Ç Á¤Áö\n");
-		kSound.Close(CHANNEL::CH1);
+		kCamera.camPos += {camSpeed* dt, 0.0F};
 	}
+
+	std::string alertPosition = "Ä«¸Þ¶ó À§Ä¡: (" + std::to_string(kCamera.camPos.x) + ", " + std::to_string(kCamera.camPos.y) + ")";
+	DYNCAST(FastText, kFastText)->SetName(alertPosition);
 }
 
 void Draw(HDC hdc)
@@ -72,7 +79,23 @@ void Draw(HDC hdc)
 	HPEN oldPen = (HPEN)SelectObject(hdc, whitePen);
 
 	Rectangle(hdc, 0, 0, kRealResolutionX, kRealResolutionY);
+
+	{
+		HBRUSH objBrush = CreateSolidBrush(COLOR_GREEN);
+		SelectObject(hdc, objBrush);
+		HPEN objPen = CreatePen(PS_SOLID, 1, COLOR_GREEN);
+		SelectObject(hdc, objPen);
+
+		Vector2f camRatio = kCamera.GetCamRatio();
+		Ellipse(hdc, 0 + camRatio.x, 0 + camRatio.y, 100 + camRatio.x, 100 + camRatio.y);
+
+		DeleteObject(objBrush);
+		DeleteObject(objPen);
+	}
+
+
 	kText->Draw(hdc);
+	kFastText->Draw(hdc);
 
 	SelectObject(hdc, oldBrush);
 	SelectObject(hdc, oldPen);
