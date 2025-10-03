@@ -29,6 +29,9 @@
     <ClCompile Include="Input.cpp">
       <Filter>Tools</Filter>
     </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -44,6 +47,9 @@
       <Filter>UI</Filter>
     </ClInclude>
     <ClInclude Include="Input.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
       <Filter>Tools</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,7 +1,11 @@
 #pragma once
+#pragma comment(lib, "winmm")
 
 #include <windows.h>
 #include <tchar.h>
+
+#include <mmsystem.h>
+#include <Digitalv.h>
 
 #include <iostream>
 #include <random>

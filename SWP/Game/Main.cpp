@@ -2,6 +2,7 @@
 
 #include "Timer.h"
 #include "Input.h"
+#include "Sound.h"
 
 #include "Text.h"
 
@@ -11,6 +12,7 @@ int kRealResolutionX = 0;
 int kRealResolutionY = 0;
 TImer kTimer = {};
 Input kInput = {};
+Sound kSound = {};
 
 std::unique_ptr<UI> kText = std::make_unique<Text>();
 
@@ -24,6 +26,8 @@ void Initialize(HWND hwnd)
 
 	kText->Start("Hello\nWorld\nPractical\nGame\nProgramming@@@", { 0, 0, 200, 100 });
 	DYNCAST(Text, kText)->SetColor(COLOR_BLACK, COLOR_YELLOW, false);
+
+	kSound.Start();
 
 	kTimer.Reset();
 }
