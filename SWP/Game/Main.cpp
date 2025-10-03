@@ -27,7 +27,7 @@ void Initialize(HWND hwnd)
 	kText->Start("Hello\nWorld\nPractical\nGame\nProgramming@@@", { 0, 0, 200, 100 });
 	DYNCAST(Text, kText)->SetColor(COLOR_BLACK, COLOR_YELLOW, false);
 
-	kSound.Start();
+	kSound.RegisterSound("t1Sound", "test.mp3");
 
 	kTimer.Reset();
 }
@@ -42,33 +42,24 @@ void Update(HWND hwnd)
 
 	if (kInput.GetKeyDown(KEYCODE_A))
 	{
-		DEBUG_PRINT("A키를 눌렀습니다 !\n");
+		DEBUG_PRINT("음악 재생\n");
+		kSound.Play(CHANNEL::CH1, "t1Sound", false);
+		kSound.SetVolume(CHANNEL::CH1, 0.1F);
 	}
-
-	if (kInput.GetMouseDown(MOUSECODE_L))
+	else if (kInput.GetKeyDown(KEYCODE_S))
 	{
-		DEBUG_PRINT("왼쪽 마우스 눌림 !!\n");
+		DEBUG_PRINT("음악 재생 멈춤\n");
+		kSound.Stop(CHANNEL::CH1);
 	}
-	else if (kInput.GetMouseUp(MOUSECODE_L))
+	else if (kInput.GetKeyDown(KEYCODE_D))
 	{
-		DEBUG_PRINT("왼쪽 마우스 올림 !!\n");
+		DEBUG_PRINT("음악 다시 재생\n");
+		kSound.Resume(CHANNEL::CH1);
 	}
-	else if (kInput.GetMousePressed(MOUSECODE_L))
+	else if (kInput.GetKeyDown(KEYCODE_W))
 	{
-		DEBUG_PRINT("왼쪽 마우스 누르는중 !!\n");
-	}
-
-	if (kInput.GetMouseDown(MOUSECODE_R))
-	{
-		DEBUG_PRINT("오른쪽 마우스 눌림 !!\n");
-	}
-	else if (kInput.GetMouseUp(MOUSECODE_R))
-	{
-		DEBUG_PRINT("오른쪽 마우스 올림 !!\n");
-	}
-	else if (kInput.GetMousePressed(MOUSECODE_R))
-	{
-		DEBUG_PRINT("오른쪽 마우스 누르는중 !!\n");
+		DEBUG_PRINT("음악 정지\n");
+		kSound.Close(CHANNEL::CH1);
 	}
 }
 
