@@ -3,6 +3,8 @@
 class Camera
 {
 public:
+	static Camera& Handler() { static Camera g = {}; return g; }
+
 	void Reset(int width, int height);
 	void Update(float dt);
 

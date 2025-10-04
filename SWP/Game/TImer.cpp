@@ -1,7 +1,7 @@
 #include "stdafx.h"
-#include "TImer.h"
+#include "Timer.h"
 
-TImer::TImer()
+Timer::Timer()
 {
 	i64 countsPerSec = 0;
 	QueryPerformanceFrequency((LARGE_INTEGER*)&countsPerSec);
@@ -11,7 +11,7 @@ TImer::TImer()
 	_stopped = false;
 }
 
-void TImer::Tick()
+void Timer::Tick()
 {
 	if (_stopped)
 	{
@@ -29,18 +29,18 @@ void TImer::Tick()
 		_deltatTime = 0.0;
 }
 
-float TImer::DeltaTime() const
+float Timer::DeltaTime() const
 {
 	return (float)_deltatTime;
 }
 
-void TImer::Reset()
+void Timer::Reset()
 {
 	QueryPerformanceCounter((LARGE_INTEGER*)&_prevTime);
 	_stopped = false;
 }
 
-void TImer::Start()
+void Timer::Start()
 {
 	if (_stopped)
 	{
@@ -49,7 +49,7 @@ void TImer::Start()
 	}
 }
 
-void TImer::Stop()
+void Timer::Stop()
 {
 	if (!_stopped)
 		_stopped = true;

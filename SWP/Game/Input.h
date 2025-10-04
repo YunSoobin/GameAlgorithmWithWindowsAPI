@@ -47,6 +47,8 @@ enum class KEYSTATE : int
 class Input
 {
 public:
+	static Input& Handler() { static Input g = {}; return g; }
+
 	void Update();
 
 	bool GetKeyDown(int keycode) { return _currKeyState[keycode] == KEYSTATE::KEY_DOWN ? true : false; };

@@ -1,24 +1,20 @@
+/*
+[ 변수 작명 규칙 ]
+● 클래스 변수
+  > _test  (일반적)
+  > test   (중요한것)
+● 전역 변수및 상수
+  > kTest
+*/
+
 #include "stdafx.h"
-
-#include "Timer.h"
-#include "Input.h"
-#include "Sound.h"
-#include "Camera.h"
-
-#include "Text.h"
-#include "FastText.h"
-
 #pragma comment(linker,"/entry:WinMainCRTStartup /subsystem:console")
 
+#include "TestScene.h"
+
+std::unique_ptr<Scene> kCurrentScene = std::make_unique<TestScene>();
 int kRealResolutionX = 0;
 int kRealResolutionY = 0;
-TImer kTimer = {};
-Input kInput = {};
-Sound kSound = {};
-Camera kCamera = {};
-
-std::unique_ptr<UI> kText = std::make_unique<Text>();
-std::unique_ptr<UI> kFastText = std::make_unique<FastText>();
 
 void Initialize(HWND hwnd)
 {
@@ -28,51 +24,24 @@ void Initialize(HWND hwnd)
 	kRealResolutionX = r.right - r.left;
 	kRealResolutionY = r.bottom - r.top;
 
-	kText->Start("Hello\nWorld\nPractical\nGame\nProgramming@@@", { 0, 0, 200, 100 });
-	DYNCAST(Text, kText)->SetColor(COLOR_BLACK, COLOR_YELLOW, false);
-	kFastText->Start("", { 0, 100, 200, 120 });
-	DYNCAST(FastText, kFastText)->SetColor(COLOR_WHITE, COLOR_BLUE, false);
-	DYNCAST(FastText, kFastText)->SetSize({ 5, 20 });
+	Camera::Handler().Reset(kRealResolutionX, kRealResolutionY);
+	Timer::Handler().Reset();
+	Sound::Handler().Reset();
+	Timer::Handler().Reset();
 
-	kSound.RegisterSound("t1Sound", "test.mp3");
-	kCamera.Reset(kRealResolutionX, kRealResolutionY);
-
-	kTimer.Reset();
+	kCurrentScene->Start();
 }
 
 void Update(HWND hwnd)
 {
-	kTimer.Tick();
-	const float dt = kTimer.DeltaTime();
+	Timer::Handler().Tick();
+	const float dt = Timer::Handler().DeltaTime();
 
 	// TODO
-	kInput.Update();
-	kCamera.Update(dt);
+	Input::Handler().Update();
+	Camera::Handler().Update(dt);
 
-	constexpr float camSpeed = 100.0F;
-	if (kInput.GetKeyPressed(KEYCODE_W))
-	{
-		kCamera.camPos += {0.0F, -camSpeed * dt};
-	}
-	if (kInput.GetKeyPressed(KEYCODE_S))
-	{
-		kCamera.camPos += {0.0F, camSpeed* dt};
-	}
-	if (kInput.GetKeyPressed(KEYCODE_A))
-	{
-		kCamera.camPos += {-camSpeed * dt, 0.0F };
-	}
-	if (kInput.GetKeyPressed(KEYCODE_D))
-	{
-		kCamera.camPos += {camSpeed* dt, 0.0F};
-	}
-	if (kInput.GetKeyPressed(KEYCODE_SPACE))
-	{
-		kCamera.Shake(8.0F, 0.5F);
-	}
-
-	std::string alertPosition = "카메라 위치: (" + std::to_string(kCamera.camPos.x) + ", " + std::to_string(kCamera.camPos.y) + ")";
-	DYNCAST(FastText, kFastText)->SetName(alertPosition);
+	kCurrentScene->Update(dt);
 }
 
 void Draw(HDC hdc)
@@ -84,23 +53,7 @@ void Draw(HDC hdc)
 	HPEN oldPen = (HPEN)SelectObject(hdc, whitePen);
 
 	Rectangle(hdc, 0, 0, kRealResolutionX, kRealResolutionY);
-
-	{
-		HBRUSH objBrush = CreateSolidBrush(COLOR_GREEN);
-		SelectObject(hdc, objBrush);
-		HPEN objPen = CreatePen(PS_SOLID, 1, COLOR_GREEN);
-		SelectObject(hdc, objPen);
-
-		Vector2f camRatio = kCamera.GetCamRatio();
-		Ellipse(hdc, 0 + camRatio.x, 0 + camRatio.y, 100 + camRatio.x, 100 + camRatio.y);
-
-		DeleteObject(objBrush);
-		DeleteObject(objPen);
-	}
-
-
-	kText->Draw(hdc);
-	kFastText->Draw(hdc);
+	kCurrentScene->Draw(hdc);
 
 	SelectObject(hdc, oldBrush);
 	SelectObject(hdc, oldPen);
@@ -121,22 +74,22 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
 		Initialize(hwnd);
 		break;
 	case WM_LBUTTONDOWN:
-		kInput.SetMouseDown(MOUSECODE_L);
+		Input::Handler().SetMouseDown(MOUSECODE_L);
 		break;
 	case WM_LBUTTONUP:
-		kInput.SetMouseUp(MOUSECODE_L);
+		Input::Handler().SetMouseUp(MOUSECODE_L);
 		break;
 	case WM_RBUTTONDOWN:
-		kInput.SetMouseDown(MOUSECODE_R);
+		Input::Handler().SetMouseDown(MOUSECODE_R);
 		break;
 	case WM_RBUTTONUP:
-		kInput.SetMouseUp(MOUSECODE_R);
+		Input::Handler().SetMouseUp(MOUSECODE_R);
 		break;
 	case WM_MBUTTONDOWN:
-		kInput.SetMouseDown(MOUSECODE_M);
+		Input::Handler().SetMouseDown(MOUSECODE_M);
 		break;
 	case WM_MBUTTONUP:
-		kInput.SetMouseUp(MOUSECODE_M);
+		Input::Handler().SetMouseUp(MOUSECODE_M);
 		break;
 	case WM_TIMER:
 		Update(hwnd);

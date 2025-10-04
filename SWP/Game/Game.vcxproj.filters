@@ -19,8 +19,7 @@
     <ClCompile Include="Main.cpp">
       <Filter>Utils</Filter>
     </ClCompile>
-    <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="TImer.cpp">
+    <ClCompile Include="Timer.cpp">
       <Filter>Tools</Filter>
     </ClCompile>
     <ClCompile Include="Text.cpp">
@@ -39,14 +38,23 @@
       <Filter>UI</Filter>
     </ClCompile>
     <ClCompile Include="Camera.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScene.cpp">
       <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Utils</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
       <Filter>Utils</Filter>
     </ClInclude>
-    <ClInclude Include="TImer.h">
+    <ClInclude Include="Timer.h">
       <Filter>Tools</Filter>
     </ClInclude>
     <ClInclude Include="UI.h">
@@ -65,6 +73,12 @@
       <Filter>UI</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TestScene.h">
       <Filter>Scene</Filter>
     </ClInclude>
   </ItemGroup>

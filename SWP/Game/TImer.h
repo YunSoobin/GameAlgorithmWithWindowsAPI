@@ -2,10 +2,12 @@
 
 using i64 = __int64;
 
-class TImer
+class Timer
 {
 public:
-	TImer();
+	static Timer& Handler() { static Timer g = {}; return g; }
+
+	Timer();
 
 	void Tick();
 	float DeltaTime() const;

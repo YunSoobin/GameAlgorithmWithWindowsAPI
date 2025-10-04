@@ -33,6 +33,8 @@ struct SoundMap
 class Sound
 {
 public:
+	static Sound& Handler() { static Sound g = {}; return g; }
+
 	void Reset();
 	void Destroy();
 	
