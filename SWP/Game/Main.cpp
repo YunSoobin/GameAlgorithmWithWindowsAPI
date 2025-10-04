@@ -47,6 +47,7 @@ void Update(HWND hwnd)
 
 	// TODO
 	kInput.Update();
+	kCamera.Update(dt);
 
 	constexpr float camSpeed = 100.0F;
 	if (kInput.GetKeyPressed(KEYCODE_W))
@@ -64,6 +65,10 @@ void Update(HWND hwnd)
 	if (kInput.GetKeyPressed(KEYCODE_D))
 	{
 		kCamera.camPos += {camSpeed* dt, 0.0F};
+	}
+	if (kInput.GetKeyPressed(KEYCODE_SPACE))
+	{
+		kCamera.Shake(8.0F, 0.5F);
 	}
 
 	std::string alertPosition = "카메라 위치: (" + std::to_string(kCamera.camPos.x) + ", " + std::to_string(kCamera.camPos.y) + ")";

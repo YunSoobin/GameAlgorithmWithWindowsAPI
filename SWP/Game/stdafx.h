@@ -50,3 +50,6 @@ struct Vector2f
 
 	Vector2f& operator+=(const Vector2f& other);
 };
+
+float GetRandomValuef(float min, float max);
+float LinearInterpolation(float a, float b, float t);
