@@ -15,9 +15,9 @@ public:
 	void SetSize(const Vector2f& size);
 	void SetColor(COLORREF textColor, COLORREF bkColor, bool isTransparency = false);
 
-private:
-	COLORREF textColor = 0, bkColor = 0;
-	bool isTransparency = false;
+protected:
+	COLORREF _textColor = 0, _bkColor = 0;
+	bool _isTransparency = false;
 	Vector2f _fontSize = {};
 };
 

@@ -12,6 +12,18 @@ void TestScene::Start()
 	_fastText->Start("", { 0, 100, 200, 120 });
 	DYNCAST(FastText, _fastText)->SetColor(COLOR_WHITE, COLOR_BLUE, false);
 	DYNCAST(FastText, _fastText)->SetSize({ 5, 20 });
+
+	_button->Start("Test Btn", { 400, 400, 500, 500 });
+	DYNCAST(Button, _button)->SetButtonColor(COLOR_WHITE, COLOR_GRAY, COLOR_DKGRAY, COLOR_BLACK);
+	DYNCAST(Button, _button)->SetSize({ 10, 100 });
+	DYNCAST(Button, _button)->SetCallbackFunction([&, this]() -> void
+		{
+			static int count = 0;
+			std::string info = "Click Count\n > " + std::to_string(count);
+
+			_text->SetName(info);
+			count++;
+		});
 }
 
 void TestScene::Update(float dt)
@@ -40,6 +52,10 @@ void TestScene::Update(float dt)
 		Camera::Handler().Shake(8.0F, 0.5F);
 	}
 
+	UI* ptr[] = { _text.get(), _fastText.get(), _button.get() };
+	for (int i = 0; i < _countof(ptr); ++i)
+		ptr[i]->Update(dt);
+
 	std::string alertPosition = "카메라 위치: (" + std::to_string(Camera::Handler().camPos.x) + ", " + std::to_string(Camera::Handler().camPos.y) + ")";
 	DYNCAST(FastText, _fastText)->SetName(alertPosition);
 }
@@ -61,6 +77,8 @@ void TestScene::Draw(HDC hdc)
 	DeleteObject(objPen);
 
 	// UI 그리기
-	_text->Draw(hdc);
-	_fastText->Draw(hdc);
+	UI* ptr[] = { _text.get(), _fastText.get(), _button.get() };
+	for (int i = 0; i < _countof(ptr); ++i)
+		ptr[i]->Draw(hdc);
 }
+ 

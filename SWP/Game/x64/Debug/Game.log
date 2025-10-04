@@ -1,4 +1,14 @@
-﻿  Main.cpp
-  Timer.cpp
-  코드를 생성하고 있습니다...
+﻿  TestScene.cpp
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(74,69): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(74,51): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(74,33): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(74,17): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
+  
   Game.vcxproj -> C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\x64\Debug\Game.exe

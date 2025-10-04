@@ -20,18 +20,18 @@ void FastText::Draw(HDC hdc)
 	HFONT hFont = CreateFontA((int)_fontSize.y, (int)_fontSize.x, 0, 0, 0, 0, 0, 0, HANGEUL_CHARSET, 0, 0, 0, 0, "¸¼Àº °íµñ"); // VARIABLE_PITCH | FF_ROMAN
 	HFONT OldFont = (HFONT)SelectObject(hdc, hFont);
 
-	SetTextColor(hdc, textColor);
-	SetBkColor(hdc, bkColor);
+	SetTextColor(hdc, _textColor);
+	SetBkColor(hdc, _bkColor);
 
-	if (isTransparency)
+	if (_isTransparency)
 	{
 		SetBkMode(hdc, TRANSPARENT);
 	}
 	else 
 	{
-		HBRUSH brush = CreateSolidBrush(bkColor);
+		HBRUSH brush = CreateSolidBrush(_bkColor);
 		SelectObject(hdc, brush);
-		HPEN pen = CreatePen(PS_SOLID, 1, bkColor);
+		HPEN pen = CreatePen(PS_SOLID, 1, _bkColor);
 		SelectObject(hdc, pen);
 
 		Rectangle(hdc, r.left, r.top, r.right, r.bottom);
@@ -55,7 +55,7 @@ void FastText::Draw(HDC hdc)
 	SelectObject(hdc, OldFont);
 	DeleteObject(hFont);
 
-	if (isTransparency)
+	if (_isTransparency)
 		SetBkMode(hdc, OPAQUE);
 }
 
@@ -77,7 +77,7 @@ void FastText::SetSize(const Vector2f& size)
 
 void FastText::SetColor(COLORREF textColor, COLORREF bkColor, bool isTransparency)
 {
-	this->textColor = textColor;
-	this->bkColor = bkColor;
-	this->isTransparency = isTransparency;
+	this->_textColor = textColor;
+	this->_bkColor = bkColor;
+	this->_isTransparency = isTransparency;
 }

@@ -12,6 +12,7 @@
 #include <vector>
 #include <string>
 #include <map>
+#include <functional>
 
 #define SCREEN_WIDTH (1280)
 #define SCREEN_HEIGHT (920)
@@ -36,6 +37,8 @@ enum LINEAR_COLOR : int
 {
 	COLOR_WHITE = RGB(255, 255, 255),
 	COLOR_BLACK = RGB(0, 0, 0),
+	COLOR_GRAY = RGB(180, 180, 180),
+	COLOR_DKGRAY = RGB(80, 80, 80),
 	COLOR_RED = RGB(255, 0, 0),
 	COLOR_GREEN = RGB(0, 255, 0),
 	COLOR_BLUE = RGB(0, 0, 255),
@@ -53,3 +56,6 @@ struct Vector2f
 
 float GetRandomValuef(float min, float max);
 float LinearInterpolation(float a, float b, float t);
+
+bool AABB(const RECT& a, const RECT& b);
+bool BoxAndPoint(const RECT& box, const Vector2f& p);

@@ -2,6 +2,11 @@
 
 #pragma warning(disable:4996)
 
+#include "Camera.h"
+#include "Input.h"
+#include "Sound.h"
+#include "Timer.h"
+
 constexpr float kAsciiRatio = (0.78F);
 
 class UI
