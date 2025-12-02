@@ -24,6 +24,14 @@ void TestScene::Start()
 			_text->SetName(info);
 			count++;
 		});
+
+	_hpBar->Start("", { 0, 100, 100, 120 });
+	DYNCAST(HpBar, _hpBar)->SetColor(COLOR_WHITE, COLOR_RED, COLOR_BLACK, 3);
+
+	_gaugeBar->Start("", { 0, 500, 100, 600 });
+	DYNCAST(GaugeBar, _gaugeBar)->SetColor(COLOR_BLUE);
+	DYNCAST(GaugeBar, _gaugeBar)->SetEndTime(10.0F);
+	DYNCAST(GaugeBar, _gaugeBar)->Animate();
 }
 
 void TestScene::Update(float dt)
@@ -52,7 +60,7 @@ void TestScene::Update(float dt)
 		Camera::Handler().Shake(8.0F, 0.5F);
 	}
 
-	UI* ptr[] = { _text.get(), _fastText.get(), _button.get() };
+	UI* ptr[] = { _text.get(), _fastText.get(), _button.get(), _hpBar.get(), _gaugeBar.get() };
 	for (int i = 0; i < _countof(ptr); ++i)
 		ptr[i]->Update(dt);
 
@@ -77,7 +85,7 @@ void TestScene::Draw(HDC hdc)
 	DeleteObject(objPen);
 
 	// UI ±×¸®±â
-	UI* ptr[] = { _text.get(), _fastText.get(), _button.get() };
+	UI* ptr[] = { _text.get(), _fastText.get(), _button.get(), _hpBar.get(), _gaugeBar.get() };
 	for (int i = 0; i < _countof(ptr); ++i)
 		ptr[i]->Draw(hdc);
 }

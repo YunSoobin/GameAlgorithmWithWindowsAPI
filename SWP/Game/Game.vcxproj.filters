@@ -52,6 +52,12 @@
     <ClCompile Include="Button.cpp">
       <Filter>UI</Filter>
     </ClCompile>
+    <ClCompile Include="HpBar.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="GaugeBar.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -85,6 +91,12 @@
       <Filter>Scene</Filter>
     </ClInclude>
     <ClInclude Include="Button.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="HpBar.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="GaugeBar.h">
       <Filter>UI</Filter>
     </ClInclude>
   </ItemGroup>

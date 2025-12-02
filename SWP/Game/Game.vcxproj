@@ -132,6 +132,8 @@
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="FastText.cpp" />
+    <ClCompile Include="GaugeBar.cpp" />
+    <ClCompile Include="HpBar.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Scene.cpp" />
@@ -148,6 +150,8 @@
     <ClInclude Include="Button.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="FastText.h" />
+    <ClInclude Include="GaugeBar.h" />
+    <ClInclude Include="HpBar.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Sound.h" />

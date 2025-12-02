@@ -1,14 +1,51 @@
-﻿  TestScene.cpp
-C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(74,69): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  GaugeBar.cpp
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\GaugeBar.cpp(30,13): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/GaugeBar.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\GaugeBar.cpp(39,109): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/GaugeBar.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\GaugeBar.cpp(39,76): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/GaugeBar.cpp'을(를) 컴파일하는 중)
+  
+  HpBar.cpp
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\HpBar.cpp(33,84): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/HpBar.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\HpBar.cpp(33,63): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/HpBar.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\HpBar.cpp(33,43): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/HpBar.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\HpBar.cpp(33,25): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/HpBar.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\HpBar.cpp(37,129): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/HpBar.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\HpBar.cpp(37,96): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/HpBar.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\HpBar.cpp(37,67): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/HpBar.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\HpBar.cpp(37,37): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/HpBar.cpp'을(를) 컴파일하는 중)
+  
+  Main.cpp
+  TestScene.cpp
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(82,69): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
   
-C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(74,51): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(82,51): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
   
-C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(74,33): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(82,33): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
   
-C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(74,17): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(82,17): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
   
+  코드를 생성하고 있습니다...
   Game.vcxproj -> C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\x64\Debug\Game.exe
