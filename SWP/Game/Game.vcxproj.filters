@@ -14,6 +14,9 @@
     <Filter Include="Scene">
       <UniqueIdentifier>{1b25050a-b58b-4355-9751-1249f78bd26b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{0bafa0ab-8e0d-4e9b-b1ec-9a5ffe564578}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -58,6 +61,15 @@
     <ClCompile Include="GaugeBar.cpp">
       <Filter>UI</Filter>
     </ClCompile>
+    <ClCompile Include="LaserObject.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="RotationObject.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -98,6 +110,15 @@
     </ClInclude>
     <ClInclude Include="GaugeBar.h">
       <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="RotationObject.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="LaserObject.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Object</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -135,7 +135,10 @@
     <ClCompile Include="GaugeBar.cpp" />
     <ClCompile Include="HpBar.cpp" />
     <ClCompile Include="Input.cpp" />
+    <ClCompile Include="LaserObject.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="RotationObject.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Sound.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -153,6 +156,9 @@
     <ClInclude Include="GaugeBar.h" />
     <ClInclude Include="HpBar.h" />
     <ClInclude Include="Input.h" />
+    <ClInclude Include="LaserObject.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="RotationObject.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Sound.h" />
     <ClInclude Include="stdafx.h" />

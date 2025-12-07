@@ -8,6 +8,9 @@
 #include "HpBar.h"
 #include "GaugeBar.h"
 
+#include "LaserObject.h"
+#include "RotationObject.h"
+
 class TestScene : public Scene
 {
 public:
@@ -21,5 +24,8 @@ private:
 	std::unique_ptr<UI> _button = std::make_unique<Button>();
 	std::unique_ptr<UI> _hpBar = std::make_unique<HpBar>();
 	std::unique_ptr<UI> _gaugeBar = std::make_unique<GaugeBar>();
+
+	std::unique_ptr<Object> _laser = std::make_unique<LaserObject>();
+	std::unique_ptr<Object> _rotation = std::make_unique<RotationObject>();
 };
 

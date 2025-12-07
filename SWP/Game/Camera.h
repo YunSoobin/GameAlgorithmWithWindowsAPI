@@ -14,6 +14,7 @@ public:
 
 public:
 	Vector2f camPos;
+	float ratio;
 
 private:
 	Vector2f _animatedPos, _shakeRatio;

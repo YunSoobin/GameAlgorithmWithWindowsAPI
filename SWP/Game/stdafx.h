@@ -32,6 +32,7 @@ MessageBoxA(0, buf, "", 0); \
 #define DYNCAST(type, ptr) (dynamic_cast<type*>(ptr.get()))
 
 constexpr float kPi = 3.14159265359F;
+constexpr float kRad1 = 0.0174533F;
 
 enum LINEAR_COLOR : int
 {

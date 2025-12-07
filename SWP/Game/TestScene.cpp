@@ -32,6 +32,23 @@ void TestScene::Start()
 	DYNCAST(GaugeBar, _gaugeBar)->SetColor(COLOR_BLUE);
 	DYNCAST(GaugeBar, _gaugeBar)->SetEndTime(10.0F);
 	DYNCAST(GaugeBar, _gaugeBar)->Animate();
+
+	// Object
+	Object* obj[] = { _laser.get(), _rotation.get() };
+	for (int i = 0; i < _countof(obj); ++i)
+		obj[i]->Start();
+
+	DYNCAST(LaserObject, _laser)->position = { 100.0F, 100.0F };
+	DYNCAST(LaserObject, _laser)->SetTarget({ 400.0F, 300.0F });
+	DYNCAST(LaserObject, _laser)->SetMaxTime(0.2F);
+	DYNCAST(LaserObject, _laser)->SetLaserOpt(RGB(255, 0, 0), 10);
+
+	DYNCAST(RotationObject, _rotation)->position = { 500.0F, 500.0F };
+	DYNCAST(RotationObject, _rotation)->SetSize({ 100.0F, 100.0F }, 0.65F);
+	DYNCAST(RotationObject, _rotation)->SetColor(COLOR_BLUE, COLOR_RED, 3);
+	DYNCAST(RotationObject, _rotation)->SetOriginTheta(kPi / 3.0F, kPi / 6.0F);
+	DYNCAST(RotationObject, _rotation)->SetRotationSpeed(0.8F, -2.5F);
+	DYNCAST(RotationObject, _rotation)->SetShape(OBJECT_SHAPE::RECTANGLE, OBJECT_SHAPE::TRIANGLE);
 }
 
 void TestScene::Update(float dt)
@@ -60,6 +77,12 @@ void TestScene::Update(float dt)
 		Camera::Handler().Shake(8.0F, 0.5F);
 	}
 
+	// Object
+	Object* obj[] = { _laser.get(), _rotation.get() };
+	for (int i = 0; i < _countof(obj); ++i)
+		obj[i]->Update(dt);
+
+	// UI
 	UI* ptr[] = { _text.get(), _fastText.get(), _button.get(), _hpBar.get(), _gaugeBar.get() };
 	for (int i = 0; i < _countof(ptr); ++i)
 		ptr[i]->Update(dt);
@@ -84,7 +107,12 @@ void TestScene::Draw(HDC hdc)
 	DeleteObject(objBrush);
 	DeleteObject(objPen);
 
-	// UI ±×¸®±â
+	// Object
+	Object* obj[] = { _laser.get(), _rotation.get() };
+	for (int i = 0; i < _countof(obj); ++i)
+		obj[i]->Draw(hdc);
+
+	// UI
 	UI* ptr[] = { _text.get(), _fastText.get(), _button.get(), _hpBar.get(), _gaugeBar.get() };
 	for (int i = 0; i < _countof(ptr); ++i)
 		ptr[i]->Draw(hdc);

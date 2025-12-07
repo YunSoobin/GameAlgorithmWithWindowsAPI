@@ -10,6 +10,7 @@ void Camera::Reset(int width, int height)
 
 	_w2 = width * 0.5F;
 	_h2 = width * 0.5F;
+	ratio = width / height;
 }
 
 void Camera::Update(float dt)
