@@ -13,6 +13,7 @@
 #include <string>
 #include <map>
 #include <functional>
+#include <queue>
 
 #define SCREEN_WIDTH (1280)
 #define SCREEN_HEIGHT (920)

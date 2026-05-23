@@ -62,6 +62,7 @@ public:
 	bool GetMouseUp(int keycode) { return _prevMouseState[keycode] == KEYSTATE::KEY_UP ? true : false; }
 	bool GetMousePressed(int keycode) { return _prevMouseState[keycode] == KEYSTATE::KEY_PRESSED ? true : false; }
 
+	void SetMousePosition(int x, int y);
 	POINT GetMousePosition() const { return _pos; }
 
 private:

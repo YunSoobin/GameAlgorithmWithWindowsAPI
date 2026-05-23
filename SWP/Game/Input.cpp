@@ -38,9 +38,12 @@ void Input::Update()
 		}
 		else if (_prevMouseState[i] == KEYSTATE::KEY_UP && _currMouseState[i] == KEYSTATE::KEY_UP)
 		{
-			_prevMouseState[i] == KEYSTATE::KEY_NONE;
+			_prevMouseState[i] = KEYSTATE::KEY_NONE;
 		}
 	}
-	
-	GetCursorPos(&_pos);
+}
+
+void Input::SetMousePosition(int x, int y)
+{
+	_pos = { x, y };
 }

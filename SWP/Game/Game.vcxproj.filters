@@ -17,6 +17,9 @@
     <Filter Include="Object">
       <UniqueIdentifier>{0bafa0ab-8e0d-4e9b-b1ec-9a5ffe564578}</UniqueIdentifier>
     </Filter>
+    <Filter Include="AI">
+      <UniqueIdentifier>{3f3f95e6-65f8-4506-8e6f-b9a0c7804477}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -70,11 +73,9 @@
     <ClCompile Include="RotationObject.cpp">
       <Filter>Object</Filter>
     </ClCompile>
+    <ClCompile Include="AStar.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Utils</Filter>
-    </ClInclude>
     <ClInclude Include="Timer.h">
       <Filter>Tools</Filter>
     </ClInclude>
@@ -119,6 +120,12 @@
     </ClInclude>
     <ClInclude Include="Object.h">
       <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AStar.h">
+      <Filter>AI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

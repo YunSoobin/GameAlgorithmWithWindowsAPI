@@ -11,6 +11,8 @@
 #include "LaserObject.h"
 #include "RotationObject.h"
 
+#include "AStar.h"
+
 class TestScene : public Scene
 {
 public:
@@ -19,13 +21,10 @@ public:
 	virtual void Draw(HDC hdc);
 
 private:
-	std::unique_ptr<UI> _text = std::make_unique<Text>();
-	std::unique_ptr<UI> _fastText = std::make_unique<FastText>();
-	std::unique_ptr<UI> _button = std::make_unique<Button>();
-	std::unique_ptr<UI> _hpBar = std::make_unique<HpBar>();
-	std::unique_ptr<UI> _gaugeBar = std::make_unique<GaugeBar>();
+	std::unique_ptr<UI> _camPosText = std::make_unique<FastText>();
+	std::unique_ptr<UI> _button1 = std::make_unique<Button>();
+	std::unique_ptr<UI> _button2 = std::make_unique<Button>();
 
-	std::unique_ptr<Object> _laser = std::make_unique<LaserObject>();
-	std::unique_ptr<Object> _rotation = std::make_unique<RotationObject>();
+	AStar _pathFinder = {};
 };
 

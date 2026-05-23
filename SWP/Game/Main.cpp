@@ -73,6 +73,9 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp)
 		SetTimer(hwnd, 0, 1, 0);	// ID가 0인 타이머
 		Initialize(hwnd);
 		break;
+	case WM_MOUSEMOVE:
+		Input::Handler().SetMousePosition(LOWORD(lp), HIWORD(lp));
+		break;
 	case WM_LBUTTONDOWN:
 		Input::Handler().SetMouseDown(MOUSECODE_L);
 		break;

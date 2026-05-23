@@ -7,48 +7,30 @@ void TestScene::Start()
 
 	Sound::Handler().RegisterSound("t1Sound", "test.mp3");
 
-	_text->Start("Hello\nWorld\nPractical\nGame\nProgramming@@@", { 0, 0, 200, 100 });
-	DYNCAST(Text, _text)->SetColor(COLOR_BLACK, COLOR_YELLOW, false);
-	_fastText->Start("", { 0, 100, 200, 120 });
-	DYNCAST(FastText, _fastText)->SetColor(COLOR_WHITE, COLOR_BLUE, false);
-	DYNCAST(FastText, _fastText)->SetSize({ 5, 20 });
+	// UI
+	_camPosText->Start("", { 0, 0, 200, 20 });
+	DYNCAST(FastText, _camPosText)->SetColor(COLOR_WHITE, COLOR_BLUE, false);
+	DYNCAST(FastText, _camPosText)->SetSize({ 5, 20 });
 
-	_button->Start("Test Btn", { 400, 400, 500, 500 });
-	DYNCAST(Button, _button)->SetButtonColor(COLOR_WHITE, COLOR_GRAY, COLOR_DKGRAY, COLOR_BLACK);
-	DYNCAST(Button, _button)->SetSize({ 10, 100 });
-	DYNCAST(Button, _button)->SetCallbackFunction([&, this]() -> void
+	_button1->Start("Reset", { 0, 20, 200, 50 });
+	DYNCAST(Button, _button1)->SetButtonColor(COLOR_WHITE, COLOR_GRAY, COLOR_DKGRAY, COLOR_BLACK);
+	DYNCAST(Button, _button1)->SetSize({ 10, 30 });
+	DYNCAST(Button, _button1)->SetCallbackFunction([&, this]() -> void { _pathFinder.Reset({ 8, 8 }); _pathFinder.SearchMode(SEARCH_MODE::DEPTH_FIRST); });
+
+	_button2->Start("Find Path", { 0, 50, 200, 80 });
+	DYNCAST(Button, _button2)->SetButtonColor(COLOR_WHITE, COLOR_GRAY, COLOR_DKGRAY, COLOR_BLACK);
+	DYNCAST(Button, _button2)->SetSize({ 10, 30 });
+	DYNCAST(Button, _button2)->SetCallbackFunction([&, this]() -> void
 		{
-			static int count = 0;
-			std::string info = "Click Count\n > " + std::to_string(count);
+			_pathFinder.ClearPath();
+			_pathFinder.Search({ 0, 0 }, { 7, 7 });
+			auto history = _pathFinder.GetHistory();
 
-			_text->SetName(info);
-			count++;
+			for (int i = 0; i < history.size(); ++i)
+			{
+				_pathFinder.MakePath({ history[i].x, history[i].y });
+			}
 		});
-
-	_hpBar->Start("", { 0, 100, 100, 120 });
-	DYNCAST(HpBar, _hpBar)->SetColor(COLOR_WHITE, COLOR_RED, COLOR_BLACK, 3);
-
-	_gaugeBar->Start("", { 0, 500, 100, 600 });
-	DYNCAST(GaugeBar, _gaugeBar)->SetColor(COLOR_BLUE);
-	DYNCAST(GaugeBar, _gaugeBar)->SetEndTime(10.0F);
-	DYNCAST(GaugeBar, _gaugeBar)->Animate();
-
-	// Object
-	Object* obj[] = { _laser.get(), _rotation.get() };
-	for (int i = 0; i < _countof(obj); ++i)
-		obj[i]->Start();
-
-	DYNCAST(LaserObject, _laser)->position = { 100.0F, 100.0F };
-	DYNCAST(LaserObject, _laser)->SetTarget({ 400.0F, 300.0F });
-	DYNCAST(LaserObject, _laser)->SetMaxTime(0.2F);
-	DYNCAST(LaserObject, _laser)->SetLaserOpt(RGB(255, 0, 0), 10);
-
-	DYNCAST(RotationObject, _rotation)->position = { 500.0F, 500.0F };
-	DYNCAST(RotationObject, _rotation)->SetSize({ 100.0F, 100.0F }, 0.65F);
-	DYNCAST(RotationObject, _rotation)->SetColor(COLOR_BLUE, COLOR_RED, 3);
-	DYNCAST(RotationObject, _rotation)->SetOriginTheta(kPi / 3.0F, kPi / 6.0F);
-	DYNCAST(RotationObject, _rotation)->SetRotationSpeed(0.8F, -2.5F);
-	DYNCAST(RotationObject, _rotation)->SetShape(OBJECT_SHAPE::RECTANGLE, OBJECT_SHAPE::TRIANGLE);
 }
 
 void TestScene::Update(float dt)
@@ -77,43 +59,71 @@ void TestScene::Update(float dt)
 		Camera::Handler().Shake(8.0F, 0.5F);
 	}
 
-	// Object
-	Object* obj[] = { _laser.get(), _rotation.get() };
-	for (int i = 0; i < _countof(obj); ++i)
-		obj[i]->Update(dt);
+	// Make Wall
+	{
+		Vector2f ratio = Camera::Handler().GetCamRatio();
+		SIZE size = _pathFinder.Count();
+
+		if (Input::Handler().GetMouseDown(MOUSECODE_L))
+		{
+			for (int i = 0; i < size.cy; ++i)
+			{
+				for (int j = 0; j < size.cx; ++j)
+				{
+					RECT r = { (j + 0) * 100 + ratio.x, (i + 0) * 100 + ratio.y, (j + 1) * 100 + ratio.x, (i + 1) * 100 + ratio.y };
+					if (BoxAndPoint(r, { (float)Input::Handler().GetMousePosition().x, (float)Input::Handler().GetMousePosition().y }))
+					{
+						_pathFinder.MakeWall({ j, i });
+					}
+				}
+			}
+		}
+	}
 
 	// UI
-	UI* ptr[] = { _text.get(), _fastText.get(), _button.get(), _hpBar.get(), _gaugeBar.get() };
+	UI* ptr[] = { _camPosText.get(), _button1.get(), _button2.get() };
 	for (int i = 0; i < _countof(ptr); ++i)
 		ptr[i]->Update(dt);
 
 	std::string alertPosition = "카메라 위치: (" + std::to_string(Camera::Handler().camPos.x) + ", " + std::to_string(Camera::Handler().camPos.y) + ")";
-	DYNCAST(FastText, _fastText)->SetName(alertPosition);
+	DYNCAST(FastText, _camPosText)->SetName(alertPosition);
 }
 
 void TestScene::Draw(HDC hdc)
 {
 	Scene::Draw(hdc);
 
-	// 오브젝트 그리기
-	HBRUSH objBrush = CreateSolidBrush(COLOR_GREEN);
-	SelectObject(hdc, objBrush);
-	HPEN objPen = CreatePen(PS_SOLID, 1, COLOR_GREEN);
-	SelectObject(hdc, objPen);
+	HPEN pen = CreatePen(PS_SOLID, 3, 0);
+	HBRUSH greenBrush = CreateSolidBrush(RGB(0, 255, 0));
+	HBRUSH blueBrush = CreateSolidBrush(RGB(0, 0, 255));
+	HBRUSH redBrush = CreateSolidBrush(RGB(255, 0, 0));
+	SelectObject(hdc, pen);
 
-	Vector2f camRatio = Camera::Handler().GetCamRatio();
-	Ellipse(hdc, 0 + camRatio.x, 0 + camRatio.y, 100 + camRatio.x, 100 + camRatio.y);
+	Vector2f ratio = Camera::Handler().GetCamRatio();
+	SIZE size = _pathFinder.Count();
 
-	DeleteObject(objBrush);
-	DeleteObject(objPen);
+	for (int i = 0; i < size.cy; ++i)
+	{
+		for (int j = 0; j < size.cx; ++j)
+		{
+			if (_pathFinder.GetTile(j, i) == TILE_TYPE::SPACE)
+				SelectObject(hdc, greenBrush);
+			else if (_pathFinder.GetTile(j, i) == TILE_TYPE::WALL)
+				SelectObject(hdc, redBrush);
+			else
+				SelectObject(hdc, blueBrush);
 
-	// Object
-	Object* obj[] = { _laser.get(), _rotation.get() };
-	for (int i = 0; i < _countof(obj); ++i)
-		obj[i]->Draw(hdc);
+			Rectangle(hdc, (j + 0) * 100 + ratio.x, (i + 0) * 100 + ratio.y, (j + 1) * 100 + ratio.x, (i + 1) * 100 + ratio.y);
+		}
+	}
 
-	// UI
-	UI* ptr[] = { _text.get(), _fastText.get(), _button.get(), _hpBar.get(), _gaugeBar.get() };
+	DeleteObject(pen);
+	DeleteObject(greenBrush);
+	DeleteObject(redBrush);
+	DeleteObject(blueBrush);
+
+	// UI 그리기
+	UI* ptr[] = { _camPosText.get(), _button1.get(), _button2.get() };
 	for (int i = 0; i < _countof(ptr); ++i)
 		ptr[i]->Draw(hdc);
 }
