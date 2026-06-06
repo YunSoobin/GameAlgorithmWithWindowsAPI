@@ -11,7 +11,7 @@
 #include "LaserObject.h"
 #include "RotationObject.h"
 
-#include "AStar.h"
+#include "AIController.h"
 
 class TestScene : public Scene
 {
@@ -22,9 +22,8 @@ public:
 
 private:
 	std::unique_ptr<UI> _camPosText = std::make_unique<FastText>();
-	std::unique_ptr<UI> _button1 = std::make_unique<Button>();
-	std::unique_ptr<UI> _button2 = std::make_unique<Button>();
+	std::unique_ptr<UI> _button = std::make_unique<Button>();
 
-	AStar _pathFinder = {};
+	AIController _aiController = {};
 };
 

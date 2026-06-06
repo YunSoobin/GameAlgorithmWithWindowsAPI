@@ -73,7 +73,12 @@
     <ClCompile Include="RotationObject.cpp">
       <Filter>Object</Filter>
     </ClCompile>
-    <ClCompile Include="AStar.cpp" />
+    <ClCompile Include="AStar.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="AIController.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Timer.h">
@@ -126,6 +131,9 @@
     </ClInclude>
     <ClInclude Include="AStar.h">
       <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="AIController.h">
+      <Filter>Utils</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

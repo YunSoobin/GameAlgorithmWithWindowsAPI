@@ -12,25 +12,10 @@ void TestScene::Start()
 	DYNCAST(FastText, _camPosText)->SetColor(COLOR_WHITE, COLOR_BLUE, false);
 	DYNCAST(FastText, _camPosText)->SetSize({ 5, 20 });
 
-	_button1->Start("Reset", { 0, 20, 200, 50 });
-	DYNCAST(Button, _button1)->SetButtonColor(COLOR_WHITE, COLOR_GRAY, COLOR_DKGRAY, COLOR_BLACK);
-	DYNCAST(Button, _button1)->SetSize({ 10, 30 });
-	DYNCAST(Button, _button1)->SetCallbackFunction([&, this]() -> void { _pathFinder.Reset({ 8, 8 }); _pathFinder.SearchMode(SEARCH_MODE::DEPTH_FIRST); });
-
-	_button2->Start("Find Path", { 0, 50, 200, 80 });
-	DYNCAST(Button, _button2)->SetButtonColor(COLOR_WHITE, COLOR_GRAY, COLOR_DKGRAY, COLOR_BLACK);
-	DYNCAST(Button, _button2)->SetSize({ 10, 30 });
-	DYNCAST(Button, _button2)->SetCallbackFunction([&, this]() -> void
-		{
-			_pathFinder.ClearPath();
-			_pathFinder.Search({ 0, 0 }, { 7, 7 });
-			auto history = _pathFinder.GetHistory();
-
-			for (int i = 0; i < history.size(); ++i)
-			{
-				_pathFinder.MakePath({ history[i].x, history[i].y });
-			}
-		});
+	_button->Start("Reset", { 0, 20, 200, 50 });
+	DYNCAST(Button, _button)->SetButtonColor(COLOR_WHITE, COLOR_GRAY, COLOR_DKGRAY, COLOR_BLACK);
+	DYNCAST(Button, _button)->SetSize({ 10, 30 });
+	DYNCAST(Button, _button)->SetCallbackFunction([&, this]() -> void { _aiController.Reset({ 9, 9 }, { 100, 100 }, { 10, 10 }); });
 }
 
 void TestScene::Update(float dt)
@@ -62,7 +47,7 @@ void TestScene::Update(float dt)
 	// Make Wall
 	{
 		Vector2f ratio = Camera::Handler().GetCamRatio();
-		SIZE size = _pathFinder.Count();
+		SIZE size = _aiController.pathFinder.Count();
 
 		if (Input::Handler().GetMouseDown(MOUSECODE_L))
 		{
@@ -73,15 +58,32 @@ void TestScene::Update(float dt)
 					RECT r = { (j + 0) * 100 + ratio.x, (i + 0) * 100 + ratio.y, (j + 1) * 100 + ratio.x, (i + 1) * 100 + ratio.y };
 					if (BoxAndPoint(r, { (float)Input::Handler().GetMousePosition().x, (float)Input::Handler().GetMousePosition().y }))
 					{
-						_pathFinder.MakeWall({ j, i });
+						_aiController.pathFinder.MakeWall({ j , i });
+						_aiController.Refresh();
+					}
+				}
+			}
+		}
+		else if (Input::Handler().GetMouseDown(MOUSECODE_R))
+		{
+			for (int i = 0; i < size.cy; ++i)
+			{
+				for (int j = 0; j < size.cx; ++j)
+				{
+					RECT r = { (j + 0) * 100 + ratio.x, (i + 0) * 100 + ratio.y, (j + 1) * 100 + ratio.x, (i + 1) * 100 + ratio.y };
+					if (BoxAndPoint(r, { (float)Input::Handler().GetMousePosition().x, (float)Input::Handler().GetMousePosition().y }))
+					{
+						_aiController.Spawn({ j, i }, 3.0F);
 					}
 				}
 			}
 		}
 	}
 
+	_aiController.Update(dt);
+
 	// UI
-	UI* ptr[] = { _camPosText.get(), _button1.get(), _button2.get() };
+	UI* ptr[] = { _camPosText.get(), _button.get() };
 	for (int i = 0; i < _countof(ptr); ++i)
 		ptr[i]->Update(dt);
 
@@ -97,18 +99,19 @@ void TestScene::Draw(HDC hdc)
 	HBRUSH greenBrush = CreateSolidBrush(RGB(0, 255, 0));
 	HBRUSH blueBrush = CreateSolidBrush(RGB(0, 0, 255));
 	HBRUSH redBrush = CreateSolidBrush(RGB(255, 0, 0));
+	HBRUSH objBrush = CreateSolidBrush(RGB(52, 15, 62));
 	SelectObject(hdc, pen);
 
 	Vector2f ratio = Camera::Handler().GetCamRatio();
-	SIZE size = _pathFinder.Count();
+	SIZE size = _aiController.pathFinder.Count();
 
 	for (int i = 0; i < size.cy; ++i)
 	{
 		for (int j = 0; j < size.cx; ++j)
 		{
-			if (_pathFinder.GetTile(j, i) == TILE_TYPE::SPACE)
+			if (_aiController.pathFinder.GetTile(j, i) == TILE_TYPE::SPACE)
 				SelectObject(hdc, greenBrush);
-			else if (_pathFinder.GetTile(j, i) == TILE_TYPE::WALL)
+			else if (_aiController.pathFinder.GetTile(j, i) == TILE_TYPE::WALL)
 				SelectObject(hdc, redBrush);
 			else
 				SelectObject(hdc, blueBrush);
@@ -117,13 +120,21 @@ void TestScene::Draw(HDC hdc)
 		}
 	}
 
+	SelectObject(hdc, objBrush);
+	auto units = _aiController.GetUnits();
+	for (auto const& i : units)
+	{
+		Rectangle(hdc, i.x - 50 + ratio.x, i.y - 50 + ratio.y, i.x + 50 + ratio.x, i.y + 50 + ratio.y);
+	}
+
 	DeleteObject(pen);
 	DeleteObject(greenBrush);
 	DeleteObject(redBrush);
 	DeleteObject(blueBrush);
+	DeleteObject(objBrush);
 
 	// UI ±×¸®±â
-	UI* ptr[] = { _camPosText.get(), _button1.get(), _button2.get() };
+	UI* ptr[] = { _camPosText.get(), _button.get() };
 	for (int i = 0; i < _countof(ptr); ++i)
 		ptr[i]->Draw(hdc);
 }

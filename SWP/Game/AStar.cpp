@@ -149,6 +149,6 @@ void AStar::MakeHistory(std::vector<std::vector<HeuristicNode>>& heuristicNode, 
 		_history.push_back(current);
 	}
 
-	// _history.pop_back();	// (시작위치는 지우기)
+	_history.pop_back();	// (시작위치는 지우기)
 	std::reverse(_history.begin(), _history.end());
 }

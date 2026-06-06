@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\TestScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\TestScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\AIController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\AIController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\Camera.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\Camera.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\AIController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\AIController.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\TestScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\TestScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\AStar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\AStar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -11,29 +35,12 @@
       "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\Input.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yummy\\AppData\\Local\\Temp\\ffd6ff76-f98f-4f62-9d87-1784a3f6ef53_Chap9_1.zip.f53\\Chap9_1\\Game\\Input.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yummy\\AppData\\Local\\Temp\\12ca4dbf-4613-45c9-89f4-8543353a33ae_Chap9_1.zip.3ae\\Chap9_1\\Game\\AStar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\TestScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\TestScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yummy\\AppData\\Local\\Temp\\9ac6b2c8-e000-4494-9853-c5f084ca2a9e_Chap9_1.zip.a9e\\Chap9_1\\Game\\TestScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\AStar.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\AStar.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\Input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\TestScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\TestScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\AStar.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|solutionrelative:Game\\AStar.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F6571B6-8864-4894-8179-A24796E9A917}|Game\\Game.vcxproj|C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\LaserObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -78,18 +85,18 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 127,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 109,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "AStar.cpp",
               "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\AStar.cpp",
               "RelativeDocumentMoniker": "Game\\AStar.cpp",
               "ToolTip": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\AStar.cpp",
               "RelativeToolTip": "Game\\AStar.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAJgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-05-23T07:27:59.39Z",
               "EditorCaption": ""
@@ -109,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "LaserObject.cpp",
               "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\LaserObject.cpp",
               "RelativeDocumentMoniker": "Game\\LaserObject.cpp",
@@ -117,12 +124,11 @@
               "RelativeToolTip": "Game\\LaserObject.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-07T10:01:46.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T10:01:46.601Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Main.cpp",
               "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\Main.cpp",
               "RelativeDocumentMoniker": "Game\\Main.cpp",
@@ -130,12 +136,11 @@
               "RelativeToolTip": "Game\\Main.cpp",
               "ViewState": "AgIAAGcAAAAAAAAAAAAmwHwAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-08T07:01:07.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T07:01:07.576Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "stdafx.cpp",
               "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\stdafx.cpp",
               "RelativeDocumentMoniker": "Game\\stdafx.cpp",
@@ -143,12 +148,11 @@
               "RelativeToolTip": "Game\\stdafx.cpp",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-03T15:40:11.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T15:40:11.366Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "stdafx.h",
               "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\stdafx.h",
               "RelativeDocumentMoniker": "Game\\stdafx.h",
@@ -156,12 +160,11 @@
               "RelativeToolTip": "Game\\stdafx.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-08T07:02:51.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T07:02:51.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "RotationObject.h",
               "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\RotationObject.h",
               "RelativeDocumentMoniker": "Game\\RotationObject.h",
@@ -169,12 +172,11 @@
               "RelativeToolTip": "Game\\RotationObject.h",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAAA8AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-07T09:30:44.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T09:30:44.52Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Object.h",
               "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\Object.h",
               "RelativeDocumentMoniker": "Game\\Object.h",
@@ -187,51 +189,103 @@
           ]
         },
         {
-          "DockedWidth": 382,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 400,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "Camera.h",
+              "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\Camera.h",
+              "RelativeDocumentMoniker": "Game\\Camera.h",
+              "ToolTip": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\Camera.h",
+              "RelativeToolTip": "Game\\Camera.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-06-06T11:48:43.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Camera.cpp",
+              "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\Camera.cpp",
+              "RelativeDocumentMoniker": "Game\\Camera.cpp",
+              "ToolTip": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\Camera.cpp",
+              "RelativeToolTip": "Game\\Camera.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-06-06T11:48:34.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AIController.cpp",
+              "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\AIController.cpp",
+              "RelativeDocumentMoniker": "Game\\AIController.cpp",
+              "ToolTip": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\AIController.cpp",
+              "RelativeToolTip": "Game\\AIController.cpp",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAowGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-06-06T11:10:13.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "TestScene.cpp",
               "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\TestScene.cpp",
               "RelativeDocumentMoniker": "Game\\TestScene.cpp",
-              "ToolTip": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\TestScene.cpp",
-              "RelativeToolTip": "Game\\TestScene.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\TestScene.cpp*",
+              "RelativeToolTip": "Game\\TestScene.cpp*",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAAHsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-07T10:20:32.307Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "TestScene.h",
               "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\TestScene.h",
               "RelativeDocumentMoniker": "Game\\TestScene.h",
               "ToolTip": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\TestScene.h",
               "RelativeToolTip": "Game\\TestScene.h",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBsAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-12-07T10:15:18.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "AIController.h",
+              "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\AIController.h",
+              "RelativeDocumentMoniker": "Game\\AIController.h",
+              "ToolTip": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\AIController.h",
+              "RelativeToolTip": "Game\\AIController.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-06-06T11:05:34.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Input.cpp",
               "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\Input.cpp",
               "RelativeDocumentMoniker": "Game\\Input.cpp",
               "ToolTip": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\Input.cpp",
               "RelativeToolTip": "Game\\Input.cpp",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAowCgAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowBIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-05-17T12:03:16.134Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Input.h",
               "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\Input.h",
               "RelativeDocumentMoniker": "Game\\Input.h",
@@ -239,12 +293,11 @@
               "RelativeToolTip": "Game\\Input.h",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAADAAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-17T12:03:44.062Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-17T12:03:44.062Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "RotationObject.cpp",
               "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\RotationObject.cpp",
               "RelativeDocumentMoniker": "Game\\RotationObject.cpp",
@@ -256,7 +309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "LaserObject.h",
               "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\LaserObject.h",
               "RelativeDocumentMoniker": "Game\\LaserObject.h",
@@ -268,7 +321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Object.cpp",
               "DocumentMoniker": "C:\\Users\\yummy\\Documents\\\uC5B8\uB9AC\uC5BC\\\uC778\uD504\uB7F0\\C\u002B\u002B\uB85C \uB9CC\uB4E4\uBA74\uC11C \uBC30\uC6B0\uB294 \uAC8C\uC784 \uAC1C\uBC1C\uACFC \uC54C\uACE0\uB9AC\uC998 with Windows API\\GameAlgorithmWithWindowsAPI\\SWP\\Game\\Object.cpp",
               "RelativeDocumentMoniker": "Game\\Object.cpp",
@@ -277,66 +330,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-07T10:13:44.361Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "adba3445-7d95-495b-b36f-57a4ed59cbd1",
-        "Display": 0,
-        "X": 842,
-        "Y": 334,
-        "Width": 287,
-        "Height": 757,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AStar.cpp",
-              "DocumentMoniker": "C:\\Users\\yummy\\AppData\\Local\\Temp\\12ca4dbf-4613-45c9-89f4-8543353a33ae_Chap9_1.zip.3ae\\Chap9_1\\Game\\AStar.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\AppData\\Local\\Temp\\12ca4dbf-4613-45c9-89f4-8543353a33ae_Chap9_1.zip.3ae\\Chap9_1\\Game\\AStar.cpp",
-              "ToolTip": "C:\\Users\\yummy\\AppData\\Local\\Temp\\12ca4dbf-4613-45c9-89f4-8543353a33ae_Chap9_1.zip.3ae\\Chap9_1\\Game\\AStar.cpp [\uC77D\uAE30 \uC804\uC6A9]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\AppData\\Local\\Temp\\12ca4dbf-4613-45c9-89f4-8543353a33ae_Chap9_1.zip.3ae\\Chap9_1\\Game\\AStar.cpp [\uC77D\uAE30 \uC804\uC6A9]",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAQwGkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-23T09:16:47.642Z",
-              "EditorCaption": " [\uC77D\uAE30 \uC804\uC6A9]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TestScene.cpp",
-              "DocumentMoniker": "C:\\Users\\yummy\\AppData\\Local\\Temp\\9ac6b2c8-e000-4494-9853-c5f084ca2a9e_Chap9_1.zip.a9e\\Chap9_1\\Game\\TestScene.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\AppData\\Local\\Temp\\9ac6b2c8-e000-4494-9853-c5f084ca2a9e_Chap9_1.zip.a9e\\Chap9_1\\Game\\TestScene.cpp",
-              "ToolTip": "C:\\Users\\yummy\\AppData\\Local\\Temp\\9ac6b2c8-e000-4494-9853-c5f084ca2a9e_Chap9_1.zip.a9e\\Chap9_1\\Game\\TestScene.cpp [\uC77D\uAE30 \uC804\uC6A9]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\AppData\\Local\\Temp\\9ac6b2c8-e000-4494-9853-c5f084ca2a9e_Chap9_1.zip.a9e\\Chap9_1\\Game\\TestScene.cpp [\uC77D\uAE30 \uC804\uC6A9]",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAQwHoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-23T09:10:35.884Z",
-              "EditorCaption": " [\uC77D\uAE30 \uC804\uC6A9]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Input.cpp",
-              "DocumentMoniker": "C:\\Users\\yummy\\AppData\\Local\\Temp\\ffd6ff76-f98f-4f62-9d87-1784a3f6ef53_Chap9_1.zip.f53\\Chap9_1\\Game\\Input.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\AppData\\Local\\Temp\\ffd6ff76-f98f-4f62-9d87-1784a3f6ef53_Chap9_1.zip.f53\\Chap9_1\\Game\\Input.cpp",
-              "ToolTip": "C:\\Users\\yummy\\AppData\\Local\\Temp\\ffd6ff76-f98f-4f62-9d87-1784a3f6ef53_Chap9_1.zip.f53\\Chap9_1\\Game\\Input.cpp [\uC77D\uAE30 \uC804\uC6A9]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\AppData\\Local\\Temp\\ffd6ff76-f98f-4f62-9d87-1784a3f6ef53_Chap9_1.zip.f53\\Chap9_1\\Game\\Input.cpp [\uC77D\uAE30 \uC804\uC6A9]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-23T09:17:44.56Z",
-              "EditorCaption": " [\uC77D\uAE30 \uC804\uC6A9]"
             }
           ]
         }

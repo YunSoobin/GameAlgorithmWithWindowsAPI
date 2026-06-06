@@ -1,5 +1,28 @@
-﻿  Input.cpp
-  TestScene.cpp
+﻿  TestScene.cpp
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(58,31): warning C4838: 'float'에서 'LONG'(으)로의 변환에는 축소 변환이 필요합니다.
+  (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(58,31): warning C4244: '초기화 중': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(58,56): warning C4838: 'float'에서 'LONG'(으)로의 변환에는 축소 변환이 필요합니다.
+  (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(58,56): warning C4244: '초기화 중': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(58,81): warning C4838: 'float'에서 'LONG'(으)로의 변환에는 축소 변환이 필요합니다.
+  (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(58,81): warning C4244: '초기화 중': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(58,106): warning C4838: 'float'에서 'LONG'(으)로의 변환에는 축소 변환이 필요합니다.
+  (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(58,106): warning C4244: '초기화 중': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
+  
 C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(73,31): warning C4838: 'float'에서 'LONG'(으)로의 변환에는 축소 변환이 필요합니다.
   (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
   
@@ -24,17 +47,28 @@ C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게�
 C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(73,106): warning C4244: '초기화 중': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
   
-C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(116,108): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(119,108): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
   
-C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(116,83): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(119,83): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
   
-C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(116,58): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(119,58): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
   
-C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(116,33): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(119,33): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
   
-  코드를 생성하고 있습니다...
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(127,87): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(127,67): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(127,47): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\Game\TestScene.cpp(127,27): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/TestScene.cpp'을(를) 컴파일하는 중)
+  
   Game.vcxproj -> C:\Users\yummy\Documents\언리얼\인프런\C++로 만들면서 배우는 게임 개발과 알고리즘 with Windows API\GameAlgorithmWithWindowsAPI\SWP\x64\Debug\Game.exe
